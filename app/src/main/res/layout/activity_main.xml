@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Source Currency EditText and Spinner -->
+    <EditText
+        android:id="@+id/sourceCurrencyAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <Spinner
+        android:id="@+id/sourceCurrencySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp" />
+
+    <!-- Target Currency EditText and Spinner -->
+    <EditText
+        android:id="@+id/targetCurrencyAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint="Converted amount"
+        android:inputType="none"
+        android:minHeight="48dp" />
+
+    <Spinner
+        android:id="@+id/targetCurrencySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp" />
+
+</LinearLayout>
