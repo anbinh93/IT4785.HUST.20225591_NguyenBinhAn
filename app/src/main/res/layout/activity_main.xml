@@ -1,0 +1,39 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Header Toolbar -->
+<androidx.appcompat.widget.Toolbar
+android:id="@+id/toolbar"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#D32F2F"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:elevation="4dp"
+    android:title="Inbox"
+    android:titleTextColor="@android:color/white" />
+
+    <!-- RecyclerView for the email list -->
+<androidx.recyclerview.widget.RecyclerView
+android:id="@+id/recyclerView"
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="1"
+android:padding="8dp" />
+
+    <!-- Floating Action Button -->
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+android:id="@+id/fabCompose"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="end|bottom"
+android:layout_margin="16dp"
+android:src="@drawable/ic_add"
+android:contentDescription="Compose"
+android:tint="@android:color/white"
+app:backgroundTint="@color/design_default_color_primary" />
+
+</LinearLayout>
