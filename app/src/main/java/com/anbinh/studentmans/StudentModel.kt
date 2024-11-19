@@ -1,0 +1,3 @@
+package com.anbinh.studentmans
+
+data class StudentModel(val studentName: String, val studentId: String)
